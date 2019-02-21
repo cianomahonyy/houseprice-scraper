@@ -13,7 +13,7 @@ count = 20
 
 pandaListOfCounties = []
 pandaListOfPrices = []
-listOfhouseTypess = []
+listOfHouseTypes = []
 listOfAddresses = []
 
 listOfCounties = ['carlow', 'cavan', 'clare', 'cork', 'donegal', 'dublin', 'galway', 'kerry', 'kildare', 'kilkenny', 'laois', 'leitrim', 'limerick', 'louth', 'mayo', 'meath', 'offaly', 'roscommon', 'sligo', 'tipperary', 'waterford', 'westmeath', 'wexford', 'wicklow']
@@ -53,7 +53,7 @@ for place in listOfCounties:
 				pandaListOfPrices.append(itemPrice)
 				newHouse = house.get_text()
 				newAddress = address.get_text()
-				listOfhouseTypess.append(newHouse)
+				listOfHouseTypes.append(newHouse)
 				listOfAddresses.append(newAddress)
 				print(newAddress)
 
@@ -74,7 +74,7 @@ for place in listOfCounties:
 house_details = {
 	'county':pandaListOfCounties,
 	'price':pandaListOfPrices,
-	'house_type':listOfhouseTypess,
+	'house_type':listOfHouseTypes,
 	'house_address':listOfAddresses
 }
 
